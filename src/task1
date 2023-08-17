@@ -1,8 +1,2 @@
+SELECT surname  FROM (SELECT experience FROM table ORDER BY experience DESC LIMIT 2) AS t1 ORDER BY experience LIMIT 1;
 
-
-В реляционной БД есть таблица сотрудников с полями: 
-id (уникальный идентификатор, NUMBER), 
-surname (фамилиясотрудника, VARCHAR), 
-experience (опыт работы, NUMBER).
-Необходимо составить SQL-запрос, который вернет фамилию
-сотрудника со вторым максимальным опытом работы.
